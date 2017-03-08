@@ -17,6 +17,6 @@ $app->register(new Silex\Provider\AssetServiceProvider(), array(
 ));
 
 // Register services
-$app['dao.livre'] = function ($app) {
+$app['dao.book'] = function ($app) {
     return new MyBooks\DAO\BookDAO($app['db']);
 };

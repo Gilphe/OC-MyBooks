@@ -6,6 +6,6 @@
         "symfony/asset": "~2.8|3.0.*"
     },
     "autoload": {
-        "psr-4": {"OC-MyBooks\\": "src"}
+        "psr-4": {"MyBooks\\": "src"}
     }
 }

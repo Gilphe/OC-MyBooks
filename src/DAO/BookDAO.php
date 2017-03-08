@@ -3,9 +3,9 @@
 namespace MyBooks\DAO;
 
 use Doctrine\DBAL\Connection;
-use MyBooks\Domain\Article;
+use MyBooks\Domain\Book;
 
-class ArticleDAO
+class BookDAO
 {
     /**
      * Database connection
@@ -47,7 +47,7 @@ class ArticleDAO
      * @param array $row The DB row containing Book data.
      * @return \MyBooks\Domain\Book
      */
-    private function builBook(array $row) {
+    private function buildBook(array $row) {
         $book = new Book();
         $book->setId($row['book_id']);
         $book->setTitle($row['book_title']);
