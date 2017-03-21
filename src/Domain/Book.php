@@ -70,7 +70,7 @@ class Book
     }
 
     public function setSummary($text) {
-        $this->content = $text;
+        $this->summary = $text;
         return $this;
     }
 
